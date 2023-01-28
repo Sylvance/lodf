@@ -1,24 +1,51 @@
 # Lodf
 
-TODO: Delete this and the text below, and describe your gem
+Local developer friendly platform gem.
+Helps developers to do local development easily for ruby projects.
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/lodf`. To experiment with that code, run `bin/console` for an interactive prompt.
+Put your Ruby code in the file `lib/lodf`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 ## Installation
 
-TODO: Replace `UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG` with your gem name right after releasing it to RubyGems.org. Please do not do it earlier due to security reasons. Alternatively, replace this section with instructions to install your gem from git if you don't plan to release to RubyGems.org.
-
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ bundle add lodf
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install UPDATE_WITH_YOUR_GEM_NAME_PRIOR_TO_RELEASE_TO_RUBYGEMS_ORG
+    $ gem install lodf
 
 ## Usage
 
-TODO: Write usage instructions here
+To setup a new ruby project locally run;
+
+    $ lodf new [project-name]
+
+This will create a new ruby project that has a `lodf.yaml` file in the root folder.
+
+To provision infrastructure, e.g. databases, message queues, for a new or an existing project do;
+
+    $ lodf init infra [project-name]
+
+To setup initial settings, e.g. migrations, database seeds, for a new or an existing project do;
+
+    $ lodf init settings [project-name]
+
+To run the server for a new or existing project do;
+
+    $ lodf run server [project-name]
+
+To run the message queue for a new or existing project do;
+
+    $ lodf run mq [project-name]
+
+To reset settings;
+
+    $ lodf reset settings [project-name]
+
+To reset infra;
+
+    $ lodf reset infra [project-name]
 
 ## Development
 
@@ -28,8 +55,8 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/lodf. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/[USERNAME]/lodf/blob/main/CODE_OF_CONDUCT.md).
+Bug reports and pull requests are welcome on GitHub at https://github.com/Sylvance/lodf. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [code of conduct](https://github.com/Sylvance/lodf/blob/main/CODE_OF_CONDUCT.md).
 
 ## Code of Conduct
 
-Everyone interacting in the Lodf project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/lodf/blob/main/CODE_OF_CONDUCT.md).
+Everyone interacting in the Lodf project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/Sylvance/lodf/blob/main/CODE_OF_CONDUCT.md).
