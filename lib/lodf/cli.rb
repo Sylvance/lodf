@@ -1,8 +1,9 @@
 # frozen_string_literal: true
 
-require 'thor'
+require "thor"
 
 module Lodf
+  # Cli
   class Cli < Thor
     desc "test", "Test command"
     def test
