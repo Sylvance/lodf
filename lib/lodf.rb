@@ -1,8 +1,7 @@
 # frozen_string_literal: true
 
-require_relative "lodf/version"
+Dir[File.join(__dir__, "lodf", "*.rb")].sort.each { |file| require file }
 
 module Lodf
   class Error < StandardError; end
-  # Your code goes here...
 end

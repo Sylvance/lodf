@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
+require 'thor'
+
 module Lodf
   class Cli < Thor
     desc "test", "Test command"
